@@ -17,9 +17,7 @@ import "../styles/global.css";
     <title>{SITE_TITLE}</title>
   </head>
   <body class="dark:bg-black">
-    <button id="dark-mode-toggle" class="mb-2 mt-2">
-      <Icon name="tabler:sun" class="w-6 h-6 dark:text-white" />
-    </button>
+
 
     <div class="text-center mb-3">
       <h1 class="text-2xl font-bold mb-1 dark:text-white">Hector Orlando Fonseca Coronel</h1>
@@ -80,108 +78,26 @@ subTitle="Cargo: Practico Zona Sur"
 />
     </div>
 
-    <div id="work" class="mb-6">
-      <SectionTitle title="Working experience" />
+    <div id="cursos" class="mb-6">
+      <SectionTitle title="Cursos Realizados" />
+
+      <RowEntry description="Realizado en la ENA,Valido hasta 05.03.2026" name="PBIP" />
 
       <RowEntry
-        description="Started working as a fulltime frontend developer. After some time I got more and more into backend development as well by developing APIs with Node.js."
-        name="10/2020 - today"
-        title="Full stack developer"
-        subTitle="Munich"
+        description="Realizado en la ENA,Valido hasta 12.03.2026"
+        name="OPB"
       />
 
-      <RowEntry
-        description="I've extended my knowledge in frontend development by developing single page applications with React and Angular."
-        name="10/2019 - 10/2020"
-        title="Frontend developer (Working student)"
-        subTitle="Munich"
-      />
 
       <RowEntry
-        description="Some first steps a frontend developer using some basic HTML, CSS and JavaScript. I've developed some smaller applications."
-        name="10/2017 - 01/2019"
-        title="Frontend developer (Working student)"
-        subTitle="Stuttgart"
-      />
-    </div>
-
-    <div id="programming-experience" class="mb-6">
-      <SectionTitle title="Programming experience" />
-
-      <RowEntry
-        description="Developed an app for ordering food with Angular."
-        name="07/2019 - 12/2019"
-        title="Food ordering app"
-      />
-    </div>
-
-    <div id="skills" class="mb-6">
-      <SectionTitle title="Skills and interests" />
-
-      <RowEntry description="German, English, French" name="Languages" />
-
-      <RowEntry
-        description="Technologies you're interested in..."
-        name="Technologies"
-      />
-
-      <RowEntry
-        description="Further interests beside tech stuff..."
-        name="Interests"
+        description="Realizado en la ENA,Valido hasta 21.02.2025"
+        name="ROR"
       />
     </div>
 
     <div id="social" class="justify-center flex flex-row mb-2">
       <div class="mr-4">
-        <SocialIcon icon="fa-brands:github" label="github" url="https://www.github.com/" />
+        <SocialIcon icon="fa-brands:linkedin" label="linkedin" url="https://www.linkedin.com/in/hector-fonseca-07b28a33/" />
       </div>
-      <div class="mr-4">
-        <SocialIcon icon="fa-brands:linkedin" label="linkedin" url="https://www.linkedin.com/" />
-      </div>
-      <div class="mr-4">
-        <SocialIcon icon="fa-brands:medium" label="medium" url="https://www.medium.com/" />
-      </div>
-      <div class="mr-4">
-        <SocialIcon icon="fa-brands:dev" label="dev" url="https://www.dev.to/" />
-      </div>
-      <div class="mr-4">
-        <SocialIcon
-          icon="fa-brands:stack-overflow"
-          label="stack-overflow"
-          url="#"
-        />
-      </div>
-      <div>
-        <SocialIcon icon="ant-design:global-outlined" label="website" url="https://www.stackoverflow.com/" />
-      </div>
-    </div>
-
-    <script is:inline>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-
-      window.onload = function () {
-        const element = document.getElementById("dark-mode-toggle");
-
-        if (element) {
-          element.addEventListener("click", () => {
-            document.documentElement.classList.toggle("dark");
-
-            localStorage.theme = document.documentElement.classList.contains(
-              "dark"
-            )
-              ? "dark"
-              : "light";
-          });
-        }
-      };
-    </script>
   </body>
 </html>
