@@ -19,8 +19,9 @@ const { description, name, title, subTitle } = Astro.props;
   <div class="flex-1">
     <div>
       {title && <span class="font-bold">{title}</span>}
-      {subTitle && <span>{subTitle}</span>}
     </div>
+    <div>{subTitle && <span class="font-normal">{subTitle}</span>}</div>
     <div>{description}</div>
+    
   </div>
 </div>
